@@ -73,8 +73,8 @@ try {
   process.exit(1);
 }
 
-// Build command
-const buildCmd = `xcodebuild ${buildTarget} -scheme "${scheme}" -destination "platform=iOS Simulator,name=${deviceName}" clean build`;
+// Build command (skip clean to avoid file duplication issues)
+const buildCmd = `xcodebuild ${buildTarget} -scheme "${scheme}" -destination "platform=iOS Simulator,name=${deviceName}" -skipMacroValidation build`;
 
 if (!quiet) {
   console.log('\n🚀 Starting build...');
