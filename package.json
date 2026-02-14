@@ -1,0 +1,27 @@
+{
+  "name": "xcode-build-wrapper",
+  "version": "1.0.0",
+  "description": "Graceful Xcode build wrapper with timeout protection and error handling",
+  "main": "xcode-build.js",
+  "bin": {
+    "xcode-build": "./xcode-build.js"
+  },
+  "scripts": {
+    "test": "node xcode-build.js --help"
+  },
+  "keywords": [
+    "xcode",
+    "xcodebuild",
+    "ios",
+    "macos",
+    "build",
+    "wrapper",
+    "timeout"
+  ],
+  "author": "nzuri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzuri0126/xcode-build-wrapper.git"
+  }
+}
